@@ -1,0 +1,53 @@
+Rappel énoncé: 
+
+L'Entreprise Vendetout voudrait créer une base de
+donnée relationnelle pour automatiser la gestion de ses ventes et de ses
+approvisionnements. Elle gère d'une part des informations sur les
+commandes des clients, et d'autre part les produits en stock avec leurs
+fournisseurs.
+
+Les informations à garder sont:
+
+Pour un client, un numéro unique, un nom ou raison sociale, le solde
+client et les adresses possibles de livraison.
+
+Pour chaque commande de client, un numéro unique, la date de
+commande, l'adresse de livraison et les produits commandés avec la
+quantité éventuelle.
+
+Pour un produit, on a un numéro unique, un nom, la quantité
+actuelle en stock, le seuil minimum, la liste des fournisseurs avec le
+prix correspondant.
+
+Les fournisseurs sont décrits quant à eux, par un numéro unique, un
+nom et une adresse.
+
+Questions:
+1. Etablis le dictionnaire de donnees de ce systeme d'informations.
+2. Donner la liste des attributs nécessaires et dire quelles sont les
+dépendances fonctionnelles qui les lient.
+3. Etables le schema conceptuel de ce systeme.
+4. Etablis le degre des cles primaires et etrangeres.
+4. En déduire un schéma de base de données relationnelle en 3e forme
+normale
+
+==================================================================================
+
+Soit le schéma de la base de données Bibliothèque suivante : 
+Etudiant(NumEtd,NomEtd,PrenomEdt,AdresseEtd) Livre(NumLivre,TitreLivre,NumAuteur,NumEditeur,NumTheme,AnneeEdition) 
+Auteur(NumAuteur,NomAuteur,AdresseAuteur) 
+Editeur(NumEditeur,NomEditeur,AdresseEditeur) 
+Theme(NumTheme,IntituléTheme) 
+Prêt(NumEtd,NumLivre,DatePret,DateRetour) 
+Ecrivez les requetes :
+
+1. Le nom, le prénom et l’adresse de l’étudiant de nom ‘Alami’
+2. Le numéro de l’auteur ‘Alami’
+3. la liste des livres de l’auteur numéro 121
+4. les livres de l’auteur nom ‘Alami’
+5. le numéro de l’auteur du livre ‘comment avoir 20 en BDD’
+6. le nom et l’adresse de l’auteur du livre ‘comment avoir 20 en BDD’
+7. Les livres de l’auteur ‘Alami’ «édités chez l’éditeur ‘Nul part’
+8. les livres de l’auteur ‘Alami’ ou ‘Belhadj’
+9. les livres qui n’ont jamais été empruntés
+==================================================================================
